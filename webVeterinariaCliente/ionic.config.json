@@ -1,0 +1,7 @@
+{
+  "name": "webVeterinaria",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <ion-title color="light">LogIn</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="lostPass" (ngSubmit)="onSubmit()">
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text"  formControlName="email" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password"  formControlName="pass" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="tertiary" expand="block">Sign In</ion-button>
+        <a [routerLink]="['/olvido-pass']" class="small-text">¿Olvidaste la Contraseña?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

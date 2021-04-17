@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="lostPass" (ngSubmit)="onSubmit()">
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input id="email" type="email" formControlName="email" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="tertiary" expand="block">Enviar</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <small>
+      Por favor, proporciona la dirección de correo electrónico que utilizaste cuando te registraste tu cuenta de Anicare.
+    </small>
+  </form>
+</ion-content>

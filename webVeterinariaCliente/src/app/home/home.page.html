@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title color="light">
+      Anicare
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registtro']" expand="block" color="tertiary">Registro</ion-button>
+
+        <span class="divider line one-line">O</span>
+
+        <span class="already">¿Ya tienes una cuenta?</span>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="tertiary">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
